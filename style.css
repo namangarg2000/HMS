@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+.nav-button {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 10px;
+}
+
+/* footer section */
+.section6 {
+  color: #fff;
+}
+
+.footer__div1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.ul1 {
+  list-style: none;
+  justify-content: center;
+}
+
+.ul1 li a {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  color: #fff;
+}
+
+.ul1 a:hover {
+  color: #0275d8;
+  transform: scale(1);
+}
+
+.div4 p {
+  font-size: 20px;
+}
+
+.div4 form input {
+  height: 3rem;
+  border: 2px solid #fff;
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 40%;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+#para {
+  color: white;
+}
