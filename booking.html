@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="booking.css">
+    <title>Book a stay</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Book a stay</h1>
+
+<form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Enter name" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="Enter email" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="Enter mobile" pattern=(\d{5})-?\s?(\d{5}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">No. of people</label>
+    <input type="number" id="adult" name="total_adults" placeholder="Enter number" min="1" required>
+  </div>
+<div class="elem-group inlined">
+    <label for="room">No. of rooms</label>
+    <input type="number" id="room" name="rooms" placeholder="Enter number" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a Room from the List</option>
+        <option value="connecting">Connecting</option>
+        <option value="adjoining">Adjoining</option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button onclick="myFunction()" type="submit">Book The Rooms</button>
+  <script>
+    function myFunction() {
+      confirm("Confirm Booking!");
+    }
+    </script>
+</form>
+</body>
+</html>
