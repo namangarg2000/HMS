@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DINE</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -23,8 +24,8 @@
     <link rel="stylesheet" href="rooms.css">
     <link rel="stylesheet" href="dine.css">
 
-    
-    
+
+
 
 
 
@@ -56,8 +57,8 @@
                     </li> -->
                 </ul>
                 <form class="d-flex ml-auto">
-                    <button class="btn btn-outline-primary mr-1" type="submit">LOG IN</button>
-                    <button class="btn btn-outline-primary" type="submit">SIGN UP</button>
+                    <a class="btn btn-outline-primary mr-1" href='login.html' role="button">Log In</a>
+                    <a class="btn btn-outline-primary mr-1" href='signup.html' role="button">Sign Up</a>
                 </form>
             </div>
         </div>
@@ -66,13 +67,17 @@
     <!----------------- NAV ENDS ----------------->
 
     <!----------------- MAIN IMAGE --------------->
-    <div class="site-blocks-cover overlay" style="background-image: url(https://source.unsplash.com/2000x1800?resort);"
-        data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('images/contact.jfif');; background-size: cover; ;" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 text-center" data-aos="fade">
                     <span class="caption mb-3 container">Our significant service for you</span>
-                    <h1 class="mb-4 container align-items-center justify-content-center">CONTACT & FEEDBACK FORM</h1>
+                    <h1 class="mb-4" style="color: white; display: inline-block;">CONTACT &
+                        FEEDBACK FORM</h1>
                 </div>
             </div>
         </div>
@@ -82,44 +87,45 @@
     <!---------------- CAROUSEL ------------------>
     <div class="total" style="padding: 20px; display: flex;">
         <div class="container-fluid">
-        <div class = "row">
-        
-            <div class="col-6" style="border-right: 1px solid grey;">
-                <h3 class="sub-heading">Contact Us</h3>
-                <div class="form-group">
-                    <label for="ourEmail">Email us at: </label>
-                    <p id="ourEmail" class="form-group">hotelmaharaj@example.com</p> 
-                </div>
+            <div class="row">
 
-                <div class="form-group">
-                    <label for="ourPhone">Call us at: </label>
-                    <p id="ourPhone" class="form-group">+91-1234567890</p>
-                    <p id="ourPhone" class="form-group">+91-9876543210</p>
-                    <p id="ourPhone" class="form-group">+91-6789012345</p> 
-                </div>
-
-                <div class="form-group" style="text-align: right;">
-                    <small>Business hours are from 09:00 am to 09:00pm</small>
-                </div>
-            
-            </div>
-
-            <div class="col-6" style="border-left: 1px solid grey;">
-                <h3 class="sub-heading">Feedback</h3>
-                <form>
+                <div class="col-6" style="border-right: 1px solid grey;">
+                    <h3 class="sub-heading">Contact Us</h3>
                     <div class="form-group">
-                        <label for="exampleInputEmail2">Email address</label>
-                        <input type="email" class="form-control" id='exampleInputEmail2' placeholder="Enter email">
+                        <label for="ourEmail">Email us at: </label>
+                        <p id="ourEmail" class="form-group">hotelmaharaj@example.com</p>
                     </div>
+
                     <div class="form-group">
-                        <label for="feedback-box">Feedback</label>
-                        <textarea class="form-control" id="feedback-box" rows="3" placeholder="Mention your feedback here"></textarea>
+                        <label for="ourPhone">Call us at: </label>
+                        <p id="ourPhone" class="form-group">+91-1234567890</p>
+                        <p id="ourPhone" class="form-group">+91-9876543210</p>
+                        <p id="ourPhone" class="form-group">+91-6789012345</p>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+
+                    <div class="form-group" style="text-align: right;">
+                        <small>Business hours are from 09:00 am to 09:00pm</small>
+                    </div>
+
+                </div>
+
+                <div class="col-6" style="border-left: 1px solid grey;">
+                    <h3 class="sub-heading">Feedback</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Email address</label>
+                            <input type="email" class="form-control" id='exampleInputEmail2' placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback-box">Feedback</label>
+                            <textarea class="form-control" id="feedback-box" rows="3"
+                                placeholder="Mention your feedback here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!---------------- CAROUSEL END---------------->
 
