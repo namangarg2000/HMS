@@ -1,7 +1,14 @@
-.title{
-text-align: center;
+.title {
+  text-align: center;
 }
 
-.form-container{
-    padding: 20px;
+.form-container {
+  padding: 20px;
+}
+
+.center {
+  margin: 25px;
+  width: 1350px;
+  height: 500px;
+  position: relative;
 }
